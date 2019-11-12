@@ -58,3 +58,5 @@ RUN addgroup -S fluent && adduser -S -g fluent fluent \
     # configuration/plugins path (default: copied from .)
     && mkdir -p /fluentd/etc /fluentd/plugins \
     && chown -R fluent /fluentd && chgrp -R fluent /fluentd
+
+USER fluent
